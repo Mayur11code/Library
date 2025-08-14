@@ -26,7 +26,13 @@
 
 }
 
-
+.remove {
+    margin-top: 36px;
+    border: none;
+    border-radius: 35px;
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
 
 .body {
     position: relative;
@@ -45,10 +51,10 @@ div.form {
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
     border-radius: 25px;
     padding: 30px;
-   
+
 }
 
-.error{
+.error {
     background-color: red;
     color: white;
     font-weight: 800;
@@ -62,15 +68,15 @@ div.form {
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
 }
 
-button.close{
+button.close {
     background-color: transparent;
     border: none;
     margin-left: 10px;
 
 }
 
-.invisible{
-     display: none;
+.invisible {
+    display: none;
 }
 
 fieldset {
@@ -103,22 +109,22 @@ input[type="submit"] {
     /* grid-auto-columns: minmax(250px, 300px);  ACTUALLY NOT NEEDED, SINCE DEFAULT FLOW IS ROW */
     /* grid-auto-flow: column; */
     resize: vertical;
-    gap:35px;
+    gap: 35px;
     padding: 35px;
 }
 
 
-.grid > * {
+.grid>* {
 
-
+    padding-top: 30px;
     background-color: black;
     color: white;
     border-radius: 45px;
-    font-family: Lato,Georgia, 'Times New Roman', Times, serif;
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
 
-    
+
 }
 
-.grid *{
+.grid * {
     text-align: center;
 }
