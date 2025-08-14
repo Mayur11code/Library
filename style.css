@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: burlywood;
+    display: flex;
+    padding: 45px;
+    height: fit-content;
+}
+
+.title {
+    font-size: x-large;
+    margin-right: auto;
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900
+}
+
+.add {
+    border: none;
+    padding: 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 50px;
+
+}
+
+
+
+.body {
+    position: relative;
+}
+
+div.form {
+    background-color: rgb(218, 172, 172);
+    top: calc(50vh - 125px);
+    right: calc(50vw - 125px);
+
+    position: absolute;
+    height: 260px;
+    width: 250px;
+
+    border: 2px solid black;
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    padding: 30px;
+   
+}
+
+.error{
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    width: fit-content;
+    position: absolute;
+    top: calc(50vh - 1em);
+    right: 45vw;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+}
+
+button.close{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+
+}
+
+.invisible{
+     display: none;
+}
+
+fieldset {
+    margin: 35px 0px 35px 0px;
+    border: none;
+}
+
+form {
+    border: 1px solid transparent;
+}
+
+
+input[type="submit"] {
+    font-family: inherit;
+    background-color: rgb(186, 231, 124);
+    border: none;
+    margin: 0px 0px 0px 100px;
+    height: 30px;
+    width: 60px;
+    border-radius: 25px;
+}
+
+.grid {
+
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(50px, 100px));  NOT RECOMMENDED TO usE BOTH SIMULTANEOUSLY */
+    grid-auto-rows: minmax(250px, 300px);
+    /* grid-auto-columns: minmax(250px, 300px);  ACTUALLY NOT NEEDED, SINCE DEFAULT FLOW IS ROW */
+    /* grid-auto-flow: column; */
+    resize: vertical;
+    gap:35px;
+    padding: 35px;
+}
+
+
+.grid > * {
+
+
+    background-color: black;
+    color: white;
+    border-radius: 45px;
+    font-family: Lato,Georgia, 'Times New Roman', Times, serif;
+
+    
+}
+
+.grid *{
+    text-align: center;
+}

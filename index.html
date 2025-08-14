@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nata+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="title">MY LIBRARYY</div>
+            <button class="add">ADD NEW BOOK</button>
+        </div>
+        <div class="grid">
+                 
+        </div>
+        <div class=" invisible form">
+            <form action="get">
+                <fieldset>
+                    <legend>Book Details</legend>
+                    <label for="title"><input type="text" name="title" id="title" placeholder="Enter Book Name"></label>
+                    <label for="author"><input type="text" name="author" id="author"
+                            placeholder="Enter Book author"></label>
+                    <label for="pages"><input type="text" name="pages" id="pages" placeholder="Enter pages"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Read Status</legend>
+                    <label for="read">Already Read ?  <input type="checkbox" id="read"></label>
+                </fieldset>
+
+                <input type="submit">
+
+            </form>
+        </div>
+        <div class="error invisible">ERROR, MISSIN ENTRY
+            <button class="close">X</button>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
