@@ -47,11 +47,12 @@ div.form {
     height: 260px;
     width: 250px;
 
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.447);
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
     border-radius: 25px;
     padding: 30px;
 
+    box-shadow: inset 0px -3px 4px 3px #2b24243d;
 }
 
 .error {
@@ -66,17 +67,20 @@ div.form {
     border: 2px solid black;
     border-radius: 25px;
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    box-shadow: inset 0px -3px 4px 3px #2b24243d;
 }
 
 button.close {
     background-color: transparent;
     border: none;
     margin-left: 10px;
+    /* box-shadow: inset 0px -3px 4px 3px #2b24243d; */
 
 }
 
 .invisible {
     display: none;
+    transition: 1s;
 }
 
 fieldset {
@@ -97,6 +101,13 @@ input[type="submit"] {
     height: 30px;
     width: 60px;
     border-radius: 25px;
+    position: absolute;
+    bottom: 45px;
+}
+
+fieldset.status {
+    position: absolute;
+    bottom: 55px;
 }
 
 .grid {
@@ -119,12 +130,40 @@ input[type="submit"] {
     padding-top: 30px;
     background-color: black;
     color: white;
-    border-radius: 45px;
+    border-radius: 20px;
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    transition: 1s;
 
 
 }
 
+.grid div.status {
+    margin-top: 24px;
+    background-color: red;
+    width: max-content;
+    padding: 3px;
+    border-radius: 10px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(180, 234, 215, 0.615);
+    padding: 10px;
+    transition: 500ms;
+}
+
 .grid * {
     text-align: center;
+}
+
+button:hover {
+    background-color: rgba(249, 25, 100, 0.462);
+    color: black;
+    box-shadow: inset 0px -3px 4px 3px #2b24243d;
 }
