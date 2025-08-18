@@ -1,16 +1,17 @@
 let lib = [];
 
-function Book(author, title, pages, status) {
+class book {
+    constructor(author, title , pages, status){
     this.author = author;
     this.title = title;
     this.pages = pages;
     this.status = status;
-    this.ID = crypto.randomUUID();
+    this.ID = crypto.randomUUID();}
 }
 
 
 function addBook(author, title, pages, status) {
-    let obj = new Book(author, title, pages, status);
+    let obj = new book(author, title, pages, status);
     lib.push(obj)
 }
 
